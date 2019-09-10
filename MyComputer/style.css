@@ -728,6 +728,25 @@ header {
     .intro__title {
         line-height: 55px;
     }
+    .about__title {
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .about__title:after {
+        width: 50%;
+    }
+    .about__subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+    .about__photo {
+        width: 30%;
+        text-align: center;
+    }
+    .about__span {
+        font-size: 12px;
+    }
     header {
         height: 550px;
     }
