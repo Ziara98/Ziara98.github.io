@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>Искушение </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+    body,
+    html {
+        height: 100%;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../bakery/1.jpeg");
+        min-height: 75%;
+    }
+
+    .menu {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Главная</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">О нас</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">Меню </a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">Связь</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Мы открыты с 7:00 до 22:00 </span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:50px"> "Искушение"</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">ул.Мира,27</span>
+        </div>
+    </header>
+
+    <div class="w3-sand w3-grayscale w3-large">
+
+
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">О нас</span></h5>
+                <p class="text_spec"> «Искушение» – уникальное заведение, в котором качество, свежесть и красота
+                    продукции ценится превыше
+                    всего. Основана
+                    сеть в начале 2014 года Елизаветой Петренко, профессиональным пекарем и кондитером . Елизавета много
+                    путешествовала
+                    по Европе, постигая искусство хлебопечения. Скрупулезно искала самые лучшие рецептуры приготовления
+                    хлеба, булочек,
+                    пирожков, печенья и тортов. Дорабатывала и усовершенствовала их, чтобы потом, через много лет,
+                    открыть свою первую пекарню
+                    В Запорожье –
+                    в городе, в который влюбился, едва только увидев его.
+                </p>
+
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Многие хлеб есть умеют,да немногие- тесто замесить".</i></p>
+                    <p>Елизавета Петренко,основатель</p>
+                </div>
+                <img src="../bakery/2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Часы работы:</strong> Ежедневно с 7:00 по 22:00 </p>
+                <p><strong>Адрес:</strong> ул. Мира,27</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Меню</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Еда</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Напитки</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Хлебная корзинка</h5>
+                    <p class="w3-text-grey">Ассорти из свежеиспеченных фруктов в хлебе и кексах 5.50</p><br>
+
+                    <h5>Миндально-медовая гранола с фруктами </h5>
+                    <p class="w3-text-grey">Натуральные хлопья из меда, поджаренного овса, изюма, миндаля и фиников 7.00
+                    </p>
+                    <br>
+
+                    <h5>Бельгийские вафли</h5>
+                    <p class="w3-text-grey">Тесто со вкусом ванили и солодовой мукой 7.50</p><br>
+
+                    <h5>Утренняя яичница</h5>
+                    <p class="w3-text-grey">Яичница, жареный красный перец и чеснок, с зеленым луком 7.50</p>
+                    <br>
+
+                    <h5>Блинчики с черникой</h5>
+                    <p class="w3-text-grey">С сиропом, маслом и большим количеством ягод 8.50</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Венский кофе</h5>
+                    <p class="w3-text-grey">Эспрессо с добавлением подогретого и вспененного молока и взбитых сливок.
+                        2.50</p><br>
+
+                    <h5>Шоколатье</h5>
+                    <p class="w3-text-grey">Шоколадный эспрессо с молоком 4.50</p><br>
+
+                    <h5>Коррето</h5>
+                    <p class="w3-text-grey">Кофе с добавлением виски 5.00</p><br>
+
+                    <h5>Фирменные чаи</h5>
+                    <p class="w3-text-grey">Фруктовые,облепиховые, <br> стандартные 3.00</p><br>
+
+                    <h5>Газировка</h5>
+                    <p class="w3-text-grey">Coca-cola, Sprite, Fanta 2.50</p>
+                </div>
+                <img src="../bakery/3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Как нас найти? </span></h5>
+                <p>Давно искали место для перекусов,эстетики и души?</p>
+                <img src="../bakery/4.jpg" class="w3-image" style="width:100%">
+                <p><span class="w3-tag">INT!</span> Мы предлагаем полный спектр услуг общественного питания для любого
+                    мероприятия, большого или малого. Мы подберем специальное меню под ваши
+                    потребности и сделаем все, чтобы удовлетворить вас, как внешним видом, так
+                    и вкусом.</p>
+                <p><strong>Забронируйте столик</strong>, узнайте о сегодняшнем специальном предложении,оставьте свое
+                    сообщение:</p>
+                <form action="mailer/mail.php">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Имя" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Сколько человек?"
+                            required name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Дата и время"
+                            required name="date" value="2020-01-20T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Ваше сообщение" required
+                            name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">Отправить</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Все права защищены. © 2020</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
